@@ -4,10 +4,10 @@ from getpass import getpass
 import time
 
 
-host= "192.168.100.10"
+host= "ip address"
 port=22
-username = "chanuka"
-password = "cisco"
+username = "user"
+password = "password"
 
 
 ssh = paramiko.SSHClient()
@@ -26,7 +26,7 @@ time.sleep(.5)
 
 print(stdout.read().decode())
     
-# ssh.close()
+ssh.close()
 
 
 
